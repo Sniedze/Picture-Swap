@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <button> Start/Stop</button>
+    <audio class="spring">
+    <source src="images/spring.mp3" type="audio/mpeg">  Your browser does not support the audio element
+    </audio>
+
+    <img class="flower"src="images/lillies.png">
+    <img class="flower"src="images/peon.png">
+    <img class="flower"src="images/peonies.png">
+    <img class="flower"src="images/sunflowers.png">
+    <img class="flower"src="images/yellow.png">
+    <script src="swap.js"></script>
+
+
+</body>
+<style>
+    button{
+        width: 250px;
+        height: 45px;
+        margin: 50px;
+        margin-left: 140px;
+        font: Ebrima;
+        font-size: 2em;
+
+    }
+    body{
+        position: relative;
+    }
+    .flower{
+        position: absolute;
+    }
+    .picked {
+        animation: fadeIt 1.5s forwards;
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+        display: block;
+    }
+
+    @keyframes fadeIt {
+        100% {
+            -webkit-opacity: 0.01;
+            -moz-opacity: 0.01;
+            opacity: 0.01;
+            color: #000;
+        }
+    }
+
+</style>
+
+</html>
